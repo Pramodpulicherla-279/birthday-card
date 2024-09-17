@@ -1,0 +1,246 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #b784db;
+    margin: 0;
+}
+
+.envelope {
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    max-width: 90%;
+}
+
+.back {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background: #6247aa;
+}
+
+.front {
+    position: absolute;
+    border-right: 130px solid #815ac0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 120px;
+    z-index: 3;
+}
+
+.front:before {
+    content: "";
+    position: absolute;
+    border-left: 130px solid #815ac0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    height: 0;
+    width: 0;
+    top: -100px;
+    left: -120px;
+}
+
+.front:after {
+    content: "";
+    position: absolute;
+    border-bottom: 105px solid #7251b5;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    height: 0;
+    width: 0;
+    top: -5px;
+    left: -120px;
+}
+
+.top {
+    position: absolute;
+    border-top: 105px solid #9163cb;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    transform-origin: top;
+    transition: 0.4s;
+}
+
+.envelope:hover .top {
+    transform: rotateX(160deg);
+}
+
+.letter {
+    position: absolute;
+    background: white;
+    width: 230px;
+    height: 180px;
+    top: 10px;
+    left: 10px;
+    transition: 0.4s;
+}
+
+.envelope:hover .letter {
+    transform: translateY(-100px);
+    z-index: 2;
+}
+
+.text1 {
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    top: -60%;
+    text-align: center;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 12px;
+}
+
+.heart {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 26px;
+    left: 26px;
+    transform: rotate(-45deg);
+    box-shadow: -5px 10px 90px red;
+    animation: untoldcoding 0.6s linear infinite;
+}
+
+@keyframes untoldcoding {
+    0% {
+        transform: rotate(-45deg) scale(1.05);
+    }
+    70% {
+        transform: rotate(-45deg) scale(1);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+.heart:before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    top: -30px;
+    border-radius: 50px;
+}
+
+.heart:after {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    right: -30px;
+    border-radius: 50px;
+}
+
+.button {
+    background-color: #e6c4ff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .back, .letter {
+        width: 200px;
+        height: 160px;
+    }
+
+    .front {
+        border-right: 100px solid #815ac0;
+        border-top: 80px solid transparent;
+        border-bottom: 80px solid transparent;
+        left: 100px;
+    }
+
+    .front:before {
+        border-left: 100px solid #815ac0;
+        border-top: 80px solid transparent;
+        border-bottom: 80px solid transparent;
+        top: -80px;
+        left: -100px;
+    }
+
+    .front:after {
+        border-bottom: 85px solid #7251b5;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        top: -5px;
+        left: -100px;
+    }
+
+    .top {
+        border-top: 85px solid #9163cb;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+    }
+
+    .text1 {
+        top: -50%;
+    }
+
+    .heart {
+        height: 40px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .heart:before, .heart:after {
+        height: 40px;
+        width: 40px;
+    }
+
+    .button {
+        padding: 10px;
+    }
+}
+
+.tap-here {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+  }
+  
+  .tap-text {
+    margin-right: 10px;
+  }
+  
+  .tap-icon {
+    font-size: 2rem;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }

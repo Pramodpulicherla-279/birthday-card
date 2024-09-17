@@ -1,0 +1,288 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #181818;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.animation-box {
+    height: 30rem;
+    background-color:#181818;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    height: 90vh;
+
+
+}
+
+.animation-container {
+    width: 1000rem;
+    height: 30rem;
+}
+
+.first-text {
+    font-size: 2rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 5rem;
+    opacity: 0;
+    animation-name: topFadeOut;
+    animation-duration: 8s;
+    color: white;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+}
+
+.second-text {
+    font-size: 3.4rem;
+    position: absolute;
+    top: 8.5rem;
+    opacity: 0;
+    animation-name: rightFadeInOut;
+    animation-delay: 3s;
+    animation-duration: 15s;
+    color: #ccc;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.third-text {
+    font-size: 4rem;
+    position: absolute;
+    left: 1rem;
+    top: 5rem;
+    opacity: 0;
+    animation-name: topFadeOut;
+    animation-delay: 14s;
+    animation-duration: 12s;
+    color: white;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+}
+
+.fourth-text {
+    font-size: 3.4rem;
+    position: absolute;
+    top: 10.5rem;
+    left: 10%;
+    opacity: 0;
+    color: #f0a3be;
+    animation-name: fadeInOut;
+    animation-delay: 25s;
+    animation-duration: 12s;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Playpen Sans", cursive;
+}
+
+.fifth-text {
+    font-size: 3rem;
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+    opacity: 0;
+    color: #f0eba3;
+    animation-name: bottomFadeOut;
+    animation-delay: 35s;
+    animation-duration: 18s;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Playpen Sans", cursive;
+}
+
+.sixth-text {
+    font-size: 6rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 5rem;
+    opacity: 0;
+    animation-name: fadeInOut;
+    animation-delay: 50s; /* Delay to start after fifth-text completes */
+    animation-duration: 10s;
+    color: white;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Playpen Sans", cursive;
+}
+
+.seventh-text {
+    font-size: 2rem;
+    position: absolute;
+    right: -100%;
+    top: 15rem;
+    opacity: 0;
+    animation-name: slideInFromRight;
+    animation-delay: 50s; /* Delay to start after sixth-text completes */
+    animation-duration: 5s;
+    color: #aeedff;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Playpen Sans", cursive;
+
+}
+
+@keyframes topFadeOut {
+    0% {
+        position: absolute;
+        top: -3rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        top: 25%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bottomFadeOut {
+    0% {
+        position: absolute;
+        bottom: -5rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        bottom: 25%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes topFadeOutVertical {
+    0% {
+        position: absolute;
+        top: -3rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        top: 45%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rightFadeInOut {
+    0% {
+        position: absolute;
+        right: -3rem;
+        opacity: 0;
+    }
+
+    75% {
+        position: absolute;
+        right: 5rem;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        right: 5rem;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        right: -100%;
+        opacity: 0;
+    }
+
+    50% {
+        right: 10%;
+        opacity: 1;
+    }
+
+    100% {
+        right: 10%;
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .animation-box {
+        width: 80%;
+        height: 50rem;
+    }
+
+    .first-text {
+        font-size: 2.2rem;
+        left: 1rem;
+        top: 2.5rem;
+    }
+
+    .second-text {
+        font-size: 1.7rem;
+        top: 4.25rem;
+    }
+
+    .third-text {
+        font-size: 1rem;
+        left: 45%;
+        top: 45%;
+    }
+
+    .fourth-text {
+        font-size: 1.7rem;
+        top: 5.25rem;
+        left: 5%;
+    }
+
+    .fifth-text {
+        font-size: 2.5rem;
+        left: 2.5%;
+        bottom: 12.5%;
+    }
+
+    .sixth-text {
+        font-size: 2.2rem;
+        left: 1.25rem;
+        top: 2.5rem;
+    }
+
+    .seventh-text {
+        font-size: 1.5rem;
+        top: 20rem;
+    }
+}
