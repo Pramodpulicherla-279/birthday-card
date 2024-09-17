@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Pramodpulicherla-279/birthday-card/static/css/main.a9d56386.css",
-    "main.js": "/Pramodpulicherla-279/birthday-card/static/js/main.f05f06cd.js",
+    "main.js": "/Pramodpulicherla-279/birthday-card/static/js/main.930bf87f.js",
     "static/js/453.ed3810f9.chunk.js": "/Pramodpulicherla-279/birthday-card/static/js/453.ed3810f9.chunk.js",
     "index.html": "/Pramodpulicherla-279/birthday-card/index.html",
     "main.a9d56386.css.map": "/Pramodpulicherla-279/birthday-card/static/css/main.a9d56386.css.map",
-    "main.f05f06cd.js.map": "/Pramodpulicherla-279/birthday-card/static/js/main.f05f06cd.js.map",
+    "main.930bf87f.js.map": "/Pramodpulicherla-279/birthday-card/static/js/main.930bf87f.js.map",
     "453.ed3810f9.chunk.js.map": "/Pramodpulicherla-279/birthday-card/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9d56386.css",
-    "static/js/main.f05f06cd.js"
+    "static/js/main.930bf87f.js"
   ]
 }
