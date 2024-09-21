@@ -1,29 +1,21 @@
-import React, { useRef } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button, Typography } from '@mui/material';
 import { TouchApp } from '@mui/icons-material';
 import './Style3.css';
+import { useAudio } from './AudioContext';
 
 const BirthdayCard = () => {
-  const audioRef = useRef(null); // Create a ref for the audio element
-
-  const navigateToNewPage = () => {
-    // Open the new page in a new window
-    window.open('/newpage', '_blank');
-  };
-
-  const playAudio = () => {
-    if (audioRef.current) {
-      audioRef.current.play();
-    }
-  };
+  const navigate = useNavigate();
+  const { playAudio } = useAudio();
 
   const handleClick = () => {
     playAudio();
-    navigateToNewPage();
+    navigate('/birthdaycomponent');
   };
 
   return (
-    <div style={{ backgroundColor: '#b784db', width:'100vh',height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ backgroundColor: '#b784db', width: '100vh', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div className="envelope">
         <div className="back"></div>
         <div className="letter">
@@ -32,7 +24,6 @@ const BirthdayCard = () => {
             <Button className="button" onClick={handleClick} variant="contained" color="primary">
               Click here
             </Button>
-            <audio ref={audioRef} src="/song.mp3" />
           </div>
         </div>
         <div className="front"></div>
