@@ -78,8 +78,8 @@ body {
     background: white;
     width: 230px;
     height: 180px;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     transition: 0.4s;
 }
 
@@ -197,7 +197,7 @@ body {
     }
 
     .text1 {
-        top: -50%;
+        top: -100%;
     }
 
     .heart {
@@ -215,6 +215,7 @@ body {
     .button {
         padding: 10px;
     }
+    
 }
 
 .tap-here {
