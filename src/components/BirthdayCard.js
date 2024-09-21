@@ -15,15 +15,33 @@ const BirthdayCard = () => {
   };
 
   return (
-    <div style={{ backgroundColor: '#b784db', width: '100vh', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ backgroundColor: '#fff4ec', width: '100vh', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div className="envelope">
         <div className="back"></div>
         <div className="letter">
+          <div className='heart'></div>
           <div className="text">
             <p>hello! &hearts;</p>
-            <Button className="button" onClick={handleClick} variant="contained" color="primary">
+            <Button
+              className="button"
+              onClick={handleClick}
+              variant="contained"
+              color="primary"
+              style={{
+                position: 'relative',
+                padding: '8px 20px',
+                background: '#fec195',
+                fontSize: '12px',
+                fontWeight: '500',
+                color: '#181818',
+                cursor: 'pointer',
+                border: '1px solid #fec195',
+                borderRadius: '16px',
+                filter: 'drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2))'
+              }}
+            >
               Click here
-            </Button>
+            </Button>            
           </div>
         </div>
         <div className="front"></div>

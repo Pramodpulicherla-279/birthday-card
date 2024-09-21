@@ -3,7 +3,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #b784db;
     margin: 0;
 }
 
@@ -18,7 +17,7 @@ body {
     position: relative;
     width: 250px;
     height: 200px;
-    background: #6247aa;
+    background: #f9a76d;
 }
 
 .front {
@@ -75,11 +74,11 @@ body {
 
 .letter {
     position: absolute;
-    background: white;
+    background-color: white;
     width: 230px;
     height: 180px;
     top: 0px;
-    left: 0px;
+    left: 10px;
     transition: 0.4s;
 }
 
@@ -90,7 +89,7 @@ body {
 
 .text1 {
     position: absolute;
-    color: white;
+    color: #181818;
     font-family: sans-serif;
     top: -60%;
     text-align: center;
@@ -101,17 +100,17 @@ body {
     text-align: center;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
+    margin-top: -20px;
     font-weight: bold;
     color: black;
     position: relative;
-    top: 12px;
+    /* top: 12px; */
 }
 
 .heart {
     background-color: red;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     position: relative;
     top: 26px;
     left: 26px;
@@ -135,20 +134,20 @@ body {
 .heart:before {
     content: '';
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     background-color: red;
-    top: -30px;
+    top: -16px;
     border-radius: 50px;
 }
 
 .heart:after {
     content: '';
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     background-color: red;
-    right: -30px;
+    right: -16px;
     border-radius: 50px;
 }
 
@@ -162,20 +161,30 @@ body {
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    .back, .letter {
+    .back {
         width: 200px;
         height: 160px;
     }
 
+    .letter {
+        position: absolute;
+        background: #ffe6d4;
+        width: 180px;
+        height: 160px;
+        top: 0px;
+        left: 10px;
+        transition: 0.4s;
+    }
+   
     .front {
-        border-right: 100px solid #815ac0;
+        border-right: 100px solid #ffc398;
         border-top: 80px solid transparent;
         border-bottom: 80px solid transparent;
         left: 100px;
     }
 
     .front:before {
-        border-left: 100px solid #815ac0;
+        border-left: 100px solid #ffc398;
         border-top: 80px solid transparent;
         border-bottom: 80px solid transparent;
         top: -80px;
@@ -183,7 +192,7 @@ body {
     }
 
     .front:after {
-        border-bottom: 85px solid #7251b5;
+        border-bottom: 85px solid #f9a76d;
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
         top: -5px;
@@ -191,7 +200,7 @@ body {
     }
 
     .top {
-        border-top: 85px solid #9163cb;
+        border-top: 85px solid #ffd2b3;
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
     }
@@ -201,19 +210,20 @@ body {
     }
 
     .heart {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         top: 20px;
-        left: 20px;
+        left: 16px;
     }
 
     .heart:before, .heart:after {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
     }
 
     .button {
         padding: 10px;
+        
     }
     
 }
