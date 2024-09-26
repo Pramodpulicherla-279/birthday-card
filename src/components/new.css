@@ -6,6 +6,12 @@ body {
     height: 100vh;
 }
 
+.name{
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .animation-box {
     height: 30rem;
     background-color:#181818;
@@ -122,7 +128,7 @@ body {
     font-size: 2rem;
     position: absolute;
     right: -100%;
-    top: 15rem;
+    top: 32rem;
     opacity: 0;
     animation-name: slideInFromRight;
     animation-delay: 50s; /* Delay to start after sixth-text completes */
@@ -283,6 +289,43 @@ body {
 
     .seventh-text {
         font-size: 1.5rem;
-        top: 20rem;
+        top: 28rem;
     }
+
+            /* Define keyframes for different animations */
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+          from { transform: translateX(-100%); }
+          to { transform: translateX(0); }
+        }
+        
+        @keyframes zoomIn {
+          from { transform: scale(0); }
+          to { transform: scale(1); }
+        }
+        
+        /* Apply animations to the images */
+        .image-animation1 {
+          animation: fadeIn 3s ease-in-out;
+          height: 150px;
+          width: 150px;
+        }
+        
+        .image-animation2 {
+          animation: slideIn 2s ease-in-out;
+        }
+        
+        .image-animation3 {
+          animation: zoomIn 2s ease-in-out;
+        }
+        
+      
+        
+        
+    
+   
 }

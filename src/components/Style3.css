@@ -192,10 +192,11 @@ body {
     }
 
     .front:after {
-        border-bottom: 85px solid #f9a76d;
+        border-bottom: 80px solid #f9a76d;
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
-        top: -5px;
+        
+        top: 0px;
         left: -100px;
     }
 
