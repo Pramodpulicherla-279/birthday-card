@@ -83,7 +83,8 @@ body {
 }
 
 .envelope:hover .letter {
-    transform: translateY(-100px);
+    transform: translateY(-180px);
+    height: 260px;
     z-index: 2;
 }
 
@@ -100,7 +101,7 @@ body {
     text-align: center;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: -20px;
+    margin-top: 40px;
     font-weight: bold;
     color: black;
     position: relative;
@@ -210,6 +211,19 @@ body {
         top: -100%;
     }
 
+    .text {
+        text-align: center;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 30px;
+        font-weight: bold;
+        color: black;
+        position: relative;
+        /* top: 12px; */
+    }
+    
+   
+
     .heart {
         height: 30px;
         width: 30px;
@@ -225,6 +239,11 @@ body {
     .button {
         padding: 10px;
         
+    }
+    .envelope:hover .letter {
+        transform: translateY(-180px);
+        height: 250px;
+        z-index: 2;
     }
     
 }
