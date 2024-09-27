@@ -4,7 +4,7 @@ import './new.css';
 
 // Import images
 
-import img3 from '../images/img3.jpg';
+import img3 from '../images/img3.png';
 
 const BirthdayComponent = () => {
   const [showConfetti, setShowConfetti] = useState(false);
@@ -44,7 +44,7 @@ const BirthdayComponent = () => {
         <div className="fifth-text" style={{ fontSize: '36px' }}>“Be happy! Today is the day you were brought into this world to be a blessing and inspiration to the people around you! You are a wonderful person! May you be given more birthdays to fulfill all of your dreams!”</div>
         {showConfetti && <Confetti />}
         <div className="sixth-text">
-          HAPPY <br />BIRTHDAY <br/> <span className='name'>Vanitha</span>
+          HAPPY <br />BIRTHDAY <br/> <span className='name'>Vanitha</span><br/>
           <img src={img3} className="image-animation3" alt="Birthday Image 3" onError={(e) => { console.error('Error loading img3:', e); }} />
         </div>
         <div className="seventh-text">-Pramod</div>
