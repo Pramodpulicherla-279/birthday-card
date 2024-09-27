@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/birthday-card/static/css/main.4de506ff.css",
-    "main.js": "/birthday-card/static/js/main.328ab87f.js",
-    "static/js/453.ed3810f9.chunk.js": "/birthday-card/static/js/453.ed3810f9.chunk.js",
-    "static/media/img3.png": "/birthday-card/static/media/img3.259376b2192ed2abd0e5.png",
-    "index.html": "/birthday-card/index.html",
-    "main.4de506ff.css.map": "/birthday-card/static/css/main.4de506ff.css.map",
-    "main.328ab87f.js.map": "/birthday-card/static/js/main.328ab87f.js.map",
-    "453.ed3810f9.chunk.js.map": "/birthday-card/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/birthday-envelope/static/css/main.4de506ff.css",
+    "main.js": "/birthday-envelope/static/js/main.a5943b63.js",
+    "static/js/453.ed3810f9.chunk.js": "/birthday-envelope/static/js/453.ed3810f9.chunk.js",
+    "static/media/img3.png": "/birthday-envelope/static/media/img3.259376b2192ed2abd0e5.png",
+    "index.html": "/birthday-envelope/index.html",
+    "main.4de506ff.css.map": "/birthday-envelope/static/css/main.4de506ff.css.map",
+    "main.a5943b63.js.map": "/birthday-envelope/static/js/main.a5943b63.js.map",
+    "453.ed3810f9.chunk.js.map": "/birthday-envelope/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4de506ff.css",
-    "static/js/main.328ab87f.js"
+    "static/js/main.a5943b63.js"
   ]
 }
